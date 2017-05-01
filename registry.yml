@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: registry
+server:
+  port: 8302
+
+eureka:
+  instance:
+    hostname: localhost
+ 
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+
+
+greeting: "welcome to Registry!"
