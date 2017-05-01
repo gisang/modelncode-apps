@@ -1,1 +1,9 @@
 greeting: "welcome to user-service!"
+
+spring:
+  profiles: dev
+greeting: "welcome to user-service (개발)!"
+
+spring:
+  profiles: local
+greeting: "welcome to user-service (테스트)!"
